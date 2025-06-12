@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari + Chrome */
+}
+
+:root {
+  --color-ubc-blue: #0c2240;
+  --color-ubc-bg-primary: #f1f1ea;
+  --color-form-violet: #4f46e5;
+}
