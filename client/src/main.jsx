@@ -9,12 +9,12 @@ import { store } from "./redux/store.js";
 import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
-	<StrictMode>
-		<Provider store={store}>
-			<HeroUIProvider>
-				<ToastProvider />
-				<App />
-			</HeroUIProvider>
-		</Provider>
-	</StrictMode>
+  <StrictMode>
+    <Provider store={store}>
+      <HeroUIProvider>
+        <ToastProvider />
+        <App />
+      </HeroUIProvider>
+    </Provider>
+  </StrictMode>,
 );

@@ -1,38 +1,38 @@
 [
-	{
-		"id": 1,
-		"name": "Basic T-Shirt",
-		"href": "#",
-		"imageSrc": "https://ubc-static.bookware3000.ca/item/large/c1/c1e49fe021251aff73143f6060f0c3c8edbcd73950a3d20b981b59943b5bad8c.jpg",
-		"imageAlt": "Front of Basic T-Shirt.",
-		"price": "$35",
-		"location": "Brock Common North"
-	},
-	{
-		"id": 2,
-		"name": "Basic T-Shirt",
-		"href": "#",
-		"imageSrc": "https://ubc-static.bookware3000.ca/item/large/c1/c1e49fe021251aff73143f6060f0c3c8edbcd73950a3d20b981b59943b5bad8c.jpg",
-		"imageAlt": "Front of Basic T-Shirt.",
-		"price": "$35",
-		"location": "Brock Common North"
-	},
-	{
-		"id": 3,
-		"name": "Basic T-Shirt",
-		"href": "#",
-		"imageSrc": "https://ubc-static.bookware3000.ca/item/large/c1/c1e49fe021251aff73143f6060f0c3c8edbcd73950a3d20b981b59943b5bad8c.jpg",
-		"imageAlt": "Front of Basic T-Shirt.",
-		"price": "$35",
-		"location": "Brock Common North"
-	},
-	{
-		"id": 4,
-		"name": "Basic T-Shirt",
-		"href": "#",
-		"imageSrc": "https://ubc-static.bookware3000.ca/item/large/c1/c1e49fe021251aff73143f6060f0c3c8edbcd73950a3d20b981b59943b5bad8c.jpg",
-		"imageAlt": "Front of Basic T-Shirt.",
-		"price": "$35",
-		"location": "Brock Common North"
-	}
+  {
+    "id": 1,
+    "name": "Basic T-Shirt",
+    "href": "#",
+    "imageSrc": "https://ubc-static.bookware3000.ca/item/large/c1/c1e49fe021251aff73143f6060f0c3c8edbcd73950a3d20b981b59943b5bad8c.jpg",
+    "imageAlt": "Front of Basic T-Shirt.",
+    "price": "$35",
+    "location": "Brock Common North"
+  },
+  {
+    "id": 2,
+    "name": "Basic T-Shirt",
+    "href": "#",
+    "imageSrc": "https://ubc-static.bookware3000.ca/item/large/c1/c1e49fe021251aff73143f6060f0c3c8edbcd73950a3d20b981b59943b5bad8c.jpg",
+    "imageAlt": "Front of Basic T-Shirt.",
+    "price": "$35",
+    "location": "Brock Common North"
+  },
+  {
+    "id": 3,
+    "name": "Basic T-Shirt",
+    "href": "#",
+    "imageSrc": "https://ubc-static.bookware3000.ca/item/large/c1/c1e49fe021251aff73143f6060f0c3c8edbcd73950a3d20b981b59943b5bad8c.jpg",
+    "imageAlt": "Front of Basic T-Shirt.",
+    "price": "$35",
+    "location": "Brock Common North"
+  },
+  {
+    "id": 4,
+    "name": "Basic T-Shirt",
+    "href": "#",
+    "imageSrc": "https://ubc-static.bookware3000.ca/item/large/c1/c1e49fe021251aff73143f6060f0c3c8edbcd73950a3d20b981b59943b5bad8c.jpg",
+    "imageAlt": "Front of Basic T-Shirt.",
+    "price": "$35",
+    "location": "Brock Common North"
+  }
 ]

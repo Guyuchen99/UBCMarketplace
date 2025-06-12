@@ -1,38 +1,38 @@
 [
-	{
-		"id": 1,
-		"name": "BIOL Textbook",
-		"href": "#",
-		"imageSrc": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.6435-9/119127194_2592728107656735_6833231770784160580_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=33274f&_nc_ohc=h7W7y2cA6QMQ7kNvwFUd8Yb&_nc_oc=AdkKK5x3KnNHpJUZ4W3IZ4puCP1WCHXg6xi2Fh2TLz5OIeVv_jJ7d572sZfMPf8X12A&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=mcWcWF4wa-HtUkSkPqGxtg&oh=00_AfLy_GSnhmWjyh-csA5PU08mKjTZvCv-pwbeJ7_m97DMnQ&oe=685CAD9E",
-		"imageAlt": "BIOL Textbook",
-		"price": "$35",
-		"location": "Brock Common North"
-	},
-	{
-		"id": 2,
-		"name": "BIOL Textbook",
-		"href": "#",
-		"imageSrc": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.6435-9/119127194_2592728107656735_6833231770784160580_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=33274f&_nc_ohc=h7W7y2cA6QMQ7kNvwFUd8Yb&_nc_oc=AdkKK5x3KnNHpJUZ4W3IZ4puCP1WCHXg6xi2Fh2TLz5OIeVv_jJ7d572sZfMPf8X12A&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=mcWcWF4wa-HtUkSkPqGxtg&oh=00_AfLy_GSnhmWjyh-csA5PU08mKjTZvCv-pwbeJ7_m97DMnQ&oe=685CAD9E",
-		"imageAlt": "BIOL Textbook",
-		"price": "$35",
-		"location": "Brock Common North"
-	},
-	{
-		"id": 3,
-		"name": "BIOL Textbook",
-		"href": "#",
-		"imageSrc": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.6435-9/119127194_2592728107656735_6833231770784160580_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=33274f&_nc_ohc=h7W7y2cA6QMQ7kNvwFUd8Yb&_nc_oc=AdkKK5x3KnNHpJUZ4W3IZ4puCP1WCHXg6xi2Fh2TLz5OIeVv_jJ7d572sZfMPf8X12A&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=mcWcWF4wa-HtUkSkPqGxtg&oh=00_AfLy_GSnhmWjyh-csA5PU08mKjTZvCv-pwbeJ7_m97DMnQ&oe=685CAD9E",
-		"imageAlt": "BIOL Textbook",
-		"price": "$35",
-		"location": "Brock Common North"
-	},
-	{
-		"id": 4,
-		"name": "BIOL Textbook",
-		"href": "#",
-		"imageSrc": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.6435-9/119127194_2592728107656735_6833231770784160580_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=33274f&_nc_ohc=h7W7y2cA6QMQ7kNvwFUd8Yb&_nc_oc=AdkKK5x3KnNHpJUZ4W3IZ4puCP1WCHXg6xi2Fh2TLz5OIeVv_jJ7d572sZfMPf8X12A&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=mcWcWF4wa-HtUkSkPqGxtg&oh=00_AfLy_GSnhmWjyh-csA5PU08mKjTZvCv-pwbeJ7_m97DMnQ&oe=685CAD9E",
-		"imageAlt": "BIOL Textbook",
-		"price": "$35",
-		"location": "Brock Common North"
-	}
+  {
+    "id": 1,
+    "name": "BIOL Textbook",
+    "href": "#",
+    "imageSrc": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.6435-9/119127194_2592728107656735_6833231770784160580_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=33274f&_nc_ohc=h7W7y2cA6QMQ7kNvwFUd8Yb&_nc_oc=AdkKK5x3KnNHpJUZ4W3IZ4puCP1WCHXg6xi2Fh2TLz5OIeVv_jJ7d572sZfMPf8X12A&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=mcWcWF4wa-HtUkSkPqGxtg&oh=00_AfLy_GSnhmWjyh-csA5PU08mKjTZvCv-pwbeJ7_m97DMnQ&oe=685CAD9E",
+    "imageAlt": "BIOL Textbook",
+    "price": "$35",
+    "location": "Brock Common North"
+  },
+  {
+    "id": 2,
+    "name": "BIOL Textbook",
+    "href": "#",
+    "imageSrc": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.6435-9/119127194_2592728107656735_6833231770784160580_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=33274f&_nc_ohc=h7W7y2cA6QMQ7kNvwFUd8Yb&_nc_oc=AdkKK5x3KnNHpJUZ4W3IZ4puCP1WCHXg6xi2Fh2TLz5OIeVv_jJ7d572sZfMPf8X12A&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=mcWcWF4wa-HtUkSkPqGxtg&oh=00_AfLy_GSnhmWjyh-csA5PU08mKjTZvCv-pwbeJ7_m97DMnQ&oe=685CAD9E",
+    "imageAlt": "BIOL Textbook",
+    "price": "$35",
+    "location": "Brock Common North"
+  },
+  {
+    "id": 3,
+    "name": "BIOL Textbook",
+    "href": "#",
+    "imageSrc": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.6435-9/119127194_2592728107656735_6833231770784160580_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=33274f&_nc_ohc=h7W7y2cA6QMQ7kNvwFUd8Yb&_nc_oc=AdkKK5x3KnNHpJUZ4W3IZ4puCP1WCHXg6xi2Fh2TLz5OIeVv_jJ7d572sZfMPf8X12A&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=mcWcWF4wa-HtUkSkPqGxtg&oh=00_AfLy_GSnhmWjyh-csA5PU08mKjTZvCv-pwbeJ7_m97DMnQ&oe=685CAD9E",
+    "imageAlt": "BIOL Textbook",
+    "price": "$35",
+    "location": "Brock Common North"
+  },
+  {
+    "id": 4,
+    "name": "BIOL Textbook",
+    "href": "#",
+    "imageSrc": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.6435-9/119127194_2592728107656735_6833231770784160580_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=33274f&_nc_ohc=h7W7y2cA6QMQ7kNvwFUd8Yb&_nc_oc=AdkKK5x3KnNHpJUZ4W3IZ4puCP1WCHXg6xi2Fh2TLz5OIeVv_jJ7d572sZfMPf8X12A&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=mcWcWF4wa-HtUkSkPqGxtg&oh=00_AfLy_GSnhmWjyh-csA5PU08mKjTZvCv-pwbeJ7_m97DMnQ&oe=685CAD9E",
+    "imageAlt": "BIOL Textbook",
+    "price": "$35",
+    "location": "Brock Common North"
+  }
 ]
