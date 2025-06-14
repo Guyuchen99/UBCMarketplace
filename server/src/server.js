@@ -9,7 +9,6 @@ import { authRouter } from "./modules/auth/auth.routes.js";
 dotenv.config();
 
 const app = express();
-
 const PORT = process.env.PORT || 5001;
 
 mongoose

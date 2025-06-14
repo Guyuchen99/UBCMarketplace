@@ -7,14 +7,14 @@ const initialState = {
   loading: true,
 };
 
-export const registerUser = createAsyncThunk("/auth/register", async (formData) => {
-  const response = await axios.post("http://localhost:5001/api/auth/register", formData, { withCredentials: true });
+export const registerUser = createAsyncThunk("/auth/register", async (form) => {
+  const response = await axios.post("http://localhost:5001/api/auth/register", form, { withCredentials: true });
 
   return response.data;
 });
 
-export const loginUser = createAsyncThunk("/auth/login", async (formData) => {
-  const response = await axios.post("http://localhost:5001/api/auth/login", formData, { withCredentials: true });
+export const loginUser = createAsyncThunk("/auth/login", async (form) => {
+  const response = await axios.post("http://localhost:5001/api/auth/login", form, { withCredentials: true });
 
   return response.data;
 });
@@ -25,13 +25,32 @@ export const logoutUser = createAsyncThunk("/auth/logout", async () => {
   return response.data;
 });
 
-export const checkAuth = createAsyncThunk("/auth/checkAuth", async () => {
-  const response = await axios.get("http://localhost:5001/api/auth/check-auth", {
-    withCredentials: true,
-    headers: {
-      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
-    },
-  });
+export const getProfile = createAsyncThunk("/auth/getProfile", async () => {
+  const response = await axios.get("http://localhost:5001/api/auth/me", { withCredentials: true });
+
+  return response.data;
+});
+
+export const updateAccount = createAsyncThunk("/auth/updateAccount", async (form) => {
+  const response = await axios.put(`http://localhost:5001/api/auth/update/me`, form, { withCredentials: true });
+
+  return response.data;
+});
+
+export const deleteAccount = createAsyncThunk("/auth/deleteAccount", async () => {
+  const response = await axios.delete(`http://localhost:5001/api/auth/delete/me`, { withCredentials: true });
+
+  return response.data;
+});
+
+export const updateUserByAdmin = createAsyncThunk("/auth/updateUserByAdmin", async ({ id, form }) => {
+  const response = await axios.put(`http://localhost:5001/api/auth/update/${id}`, form, { withCredentials: true });
+
+  return response.data;
+});
+
+export const deleteUserByAdmin = createAsyncThunk("/auth/deleteUserByAdmin", async (id) => {
+  const response = await axios.delete(`http://localhost:5001/api/auth/delete/${id}`, { withCredentials: true });
 
   return response.data;
 });
@@ -39,49 +58,35 @@ export const checkAuth = createAsyncThunk("/auth/checkAuth", async () => {
 const authSlice = createSlice({
   name: "auth",
   initialState: initialState,
-  reducers: {
-    setUser: () => {},
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(registerUser.pending, () => {})
-      .addCase(registerUser.fulfilled, (state) => {
-        state.user = null;
-        state.authenticated = false;
-      })
-      .addCase(registerUser.rejected, (state) => {
-        state.user = null;
-        state.authenticated = false;
-      })
-      .addCase(loginUser.pending, () => {})
-      .addCase(loginUser.fulfilled, (state, action) => {
-        state.user = action.payload.success ? action.payload.user : null;
-        state.authenticated = action.payload.success;
-      })
-      .addCase(loginUser.rejected, (state) => {
-        state.user = null;
-        state.authenticated = false;
-      })
-      .addCase(checkAuth.pending, (state) => {
-        state.loading = true;
-      })
-      .addCase(checkAuth.fulfilled, (state, action) => {
-        state.loading = false;
-        state.user = action.payload.success ? action.payload.user : null;
-        state.authenticated = action.payload.success;
-      })
-      .addCase(checkAuth.rejected, (state) => {
-        state.loading = false;
-        state.user = null;
-        state.authenticated = false;
-      })
       .addCase(logoutUser.fulfilled, (state) => {
         state.user = null;
         state.authenticated = false;
+      })
+      .addCase(deleteAccount.fulfilled, (state, action) => {
+        if (action.payload.success) {
+          state.user = null;
+          state.authenticated = false;
+        }
+      })
+      .addCase(getProfile.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(getProfile.fulfilled, (state, action) => {
+        if (action.payload.success) {
+          state.user = action.payload.user;
+        }
+        state.authenticated = action.payload.success;
+        state.loading = false;
+      })
+      .addCase(getProfile.rejected, (state) => {
+        state.user = null;
+        state.authenticated = false;
+        state.loading = false;
       });
   },
 });
-
-export const { setUsers } = authSlice.actions;
 
 export default authSlice.reducer;
