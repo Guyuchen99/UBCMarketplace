@@ -12,7 +12,7 @@ export function ProductCard({ product, primary = false }) {
       <CardBody className="relative overflow-visible pt-4">
         <Image
           alt={product.imageAlt}
-          className="aspect-square h-72 w-full object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80 xl:h-96"
+          className="aspect-square h-72 w-full object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80 xl:h-[22rem]"
           radius="sm"
           shadow="sm"
           src={product.imageSrc}

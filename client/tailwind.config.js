@@ -22,6 +22,10 @@ export default {
               DEFAULT: "#4338ca",
               foreground: "#ffffff",
             },
+            secondary: {
+              DEFAULT: "#06b6d4",
+              foreground: "#ffffff",
+            },
             focus: "#000000",
           },
         },
