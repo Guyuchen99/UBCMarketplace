@@ -23,7 +23,7 @@ export function DeleteAccountModal({ openDeleteAccountModal, setOpenDeleteAccoun
   }
 
   return (
-    <Modal className="h-80 w-72" isOpen={openDeleteAccountModal} onOpenChange={setOpenDeleteAccountModal}>
+    <Modal className="h-[22rem] w-72 py-5" isOpen={openDeleteAccountModal} onOpenChange={setOpenDeleteAccountModal}>
       <ModalContent>
         {(onClose) => (
           <>

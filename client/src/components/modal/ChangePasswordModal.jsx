@@ -54,15 +54,15 @@ export function ChangePasswordModal({ openChangePasswordModal, setOpenChangePass
   }
 
   return (
-    <Modal className="h-96 w-96" isOpen={openChangePasswordModal} onOpenChange={setOpenChangePasswordModal}>
+    <Modal className="h-96 w-96 py-5" isOpen={openChangePasswordModal} onOpenChange={setOpenChangePasswordModal}>
       <ModalContent>
         {(onClose) => (
           <>
-            <ModalHeader className="mx-auto pt-10">
+            <ModalHeader className="mx-auto pt-5">
               <h3 className="text-center text-xl font-bold">Change Your Password</h3>
             </ModalHeader>
 
-            <ModalBody className="mb-4 flex items-center justify-evenly text-center text-sm text-gray-600">
+            <ModalBody className="mb-1 flex items-center justify-evenly text-center text-sm text-gray-600">
               <PasswordInput
                 register={register}
                 errors={errors}

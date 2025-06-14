@@ -41,8 +41,8 @@ export function HeaderMain() {
 
   return (
     <div className="flex h-[120px] w-full items-center justify-between">
-      <Link to="/">
-        <img src={logo} alt="UBC Marketplace Logo" className="mx-5 h-28 w-auto" />
+      <Link to="/" className="ml-4 min-w-32">
+        <img src={logo} alt="UBC Marketplace Logo" className="h-28" />
       </Link>
 
       <SearchBar />
