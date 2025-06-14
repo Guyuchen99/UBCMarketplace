@@ -1,23 +1,41 @@
+import { useSelector } from "react-redux";
 import { Navigate, useLocation } from "react-router";
 
-export function CheckAuth({ children, authenticated, user }) {
+export function CheckAuth({ children }) {
+  const { authenticated, user } = useSelector((s) => s.auth);
   const location = useLocation();
 
-  if (authenticated && (location.pathname.includes("/login") || location.pathname.includes("/register"))) {
-    if (user?.role === "admin") {
-      return <Navigate to="/admin/dashboard" />;
-    } else {
-      return <Navigate to="/" />;
-    }
+  console.log(authenticated, location, user);
+
+  if (
+    authenticated &&
+    (location.pathname.includes("/login") ||
+      location.pathname.includes("/register") ||
+      location.pathname.includes("/forgot-password"))
+  ) {
+    return <Navigate to="/" replace />;
   }
 
-  if (authenticated && user?.role !== "admin" && location.pathname.includes("admin")) {
-    return <Navigate to="/unauthorized" />;
+  if (
+    !authenticated &&
+    !(
+      location.pathname === "/" ||
+      location.pathname.includes("/product-listings") ||
+      location.pathname.includes("/login") ||
+      location.pathname.includes("/register") ||
+      location.pathname.includes("/forgot-password")
+    )
+  ) {
+    return <Navigate to="/auth/login" />;
   }
 
-  if (authenticated && user?.role === "admin" && location.pathname === "/") {
-    return <Navigate to="/admin/dashboard" />;
-  }
+  // if (authenticated && user?.role !== "admin" && location.pathname.includes("admin")) {
+  //   return <Navigate to="/unauthorized" />;
+  // }
 
-  return <>{children}</>;
+  // if (authenticated && user?.role === "admin" && location.pathname === "/") {
+  //   return <Navigate to="/admin/dashboard" />;
+  // }
+
+  return children;
 }

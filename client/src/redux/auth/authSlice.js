@@ -32,13 +32,13 @@ export const getProfile = createAsyncThunk("/auth/getProfile", async () => {
 });
 
 export const updateAccount = createAsyncThunk("/auth/updateAccount", async (form) => {
-  const response = await axios.put(`http://localhost:5001/api/auth/update/me`, form, { withCredentials: true });
+  const response = await axios.put(`http://localhost:5001/api/auth/me`, form, { withCredentials: true });
 
   return response.data;
 });
 
 export const deleteAccount = createAsyncThunk("/auth/deleteAccount", async () => {
-  const response = await axios.delete(`http://localhost:5001/api/auth/delete/me`, { withCredentials: true });
+  const response = await axios.delete(`http://localhost:5001/api/auth/me`, { withCredentials: true });
 
   return response.data;
 });

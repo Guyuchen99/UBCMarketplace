@@ -1,7 +1,6 @@
 import { Input } from "@heroui/react";
 
 export function UsernameInput({ register, errors, disabled = false, readOnly = false, largerText = false }) {
-  console.log("here");
   return (
     <div className="w-full">
       <Input

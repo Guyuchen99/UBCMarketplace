@@ -9,7 +9,7 @@ import { EmailInput } from "../../components/form/EmailInput.jsx";
 import { PasswordInput } from "../../components/form/PasswordInput.jsx";
 import { SubmitButton } from "../../components/form/SubmitButton.jsx";
 
-import { loginUser } from "../../redux/auth/authSlice.js";
+import { getProfile, loginUser } from "../../redux/auth/authSlice.js";
 
 export function AuthLogin() {
   const [showPassword, setShowPassword] = useState(false);
@@ -44,6 +44,7 @@ export function AuthLogin() {
 
     dispatch(loginUser(data)).then((data) => {
       if (data?.payload?.success) {
+        dispatch(getProfile());
         navigate("/");
         setLoading(false);
         addToast({ title: "Success", description: data?.payload?.message, color: "success" });

@@ -17,14 +17,8 @@ export function Banner() {
 
   return (
     <div
-      className="w-full bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: `url(${banner})`,
-        backgroundPosition: "63% 0%",
-        marginTop: "164px",
-        minHeight: "436px",
-        height: "calc(100vh - 164px)",
-      }}
+      className="mt-[164px] h-[calc(100vh_-_164px)] min-h-[436px] w-full bg-cover bg-no-repeat"
+      style={{ backgroundImage: `url(${banner})`, backgroundPosition: "63% 0%" }}
     >
       <div className="flex h-full max-w-[37rem] flex-col items-start justify-start px-10 text-white">
         <h2 className={`text-5xl font-extrabold leading-tight sm:text-7xl ${isShort ? "my-10" : "my-16"}`}>

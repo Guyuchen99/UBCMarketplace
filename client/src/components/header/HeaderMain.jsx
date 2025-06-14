@@ -41,14 +41,16 @@ export function HeaderMain() {
 
   return (
     <div className="flex h-[120px] w-full items-center justify-between">
-      <img src={logo} alt="UBC Marketplace Logo" className="mx-5 h-28 w-auto" />
+      <Link to="/">
+        <img src={logo} alt="UBC Marketplace Logo" className="mx-5 h-28 w-auto" />
+      </Link>
 
       <SearchBar />
 
       {authenticated ? (
         <div className="mx-8 flex items-center justify-center gap-3">
           <Link
-            to="/wishlist"
+            to="/my-saved-list"
             className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow hover:border-2 hover:border-cyan-500"
             aria-label="Saved Items"
           >
