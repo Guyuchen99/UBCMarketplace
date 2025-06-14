@@ -5,6 +5,8 @@ import express from "express";
 import mongoose from "mongoose";
 
 import { authRouter } from "./modules/auth/auth.routes.js";
+import { productRouter } from "./modules/product/product.routes.js";
+import { savedListRouter } from "./modules/saved-list/saved-list.routes.js";
 
 dotenv.config();
 
@@ -33,6 +35,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use("/api/auth", authRouter);
+app.use("/api/product", productRouter);
+app.use("/api/saved-list", savedListRouter);
 
 app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}`);
