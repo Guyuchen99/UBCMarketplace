@@ -4,7 +4,6 @@ const filterOptions = {
   Trending: [
     { id: "recently-posted", label: "Recently Posted" },
     { id: "most-viewed", label: "Most Viewed" },
-    { id: "request", label: "Requests" },
     { id: "free", label: "Free Stuff" },
   ],
   Textbooks: [
