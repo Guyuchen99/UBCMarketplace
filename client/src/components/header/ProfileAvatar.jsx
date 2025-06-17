@@ -20,10 +20,9 @@ export function ProfileAvatar({ user }) {
     <Dropdown placement="bottom-end">
       <DropdownTrigger>
         <Avatar
-          as="button"
           name={user?.username?.charAt(0)?.toUpperCase()}
           src="https://images.unsplash.com/broken"
-          className="bg-white text-2xl font-extrabold text-black hover:border-2 hover:border-cyan-500 aria-expanded:scale-100 aria-expanded:border-2 aria-expanded:border-cyan-500 aria-expanded:opacity-100"
+          className="bg-white shadow text-2xl font-extrabold text-black hover:border-2 hover:border-cyan-500 aria-expanded:scale-100 aria-expanded:border-2 aria-expanded:border-cyan-500 aria-expanded:opacity-100"
           showFallback
         />
       </DropdownTrigger>

@@ -1,6 +1,6 @@
 import { Banner } from "../../components/section/Banner.jsx";
 
-import { ProductCard } from "../../components/product/ProductCard.jsx";
+import { PostingCard } from "../../components/posting/PostingCard.jsx";
 import { SectionTitle } from "../../components/section/SectionTitle.jsx";
 
 import clothing from "../../data/clothing.json";
@@ -22,7 +22,7 @@ export function Home() {
 
         <div className="mb-10 grid w-full grid-cols-1 gap-x-7 gap-y-7 px-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 xl:gap-y-80">
           {textbooks.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <PostingCard key={product.id} product={product} />
           ))}
         </div>
       </section>
@@ -36,7 +36,7 @@ export function Home() {
 
         <div className="mb-10 grid w-full grid-cols-1 gap-x-7 gap-y-7 px-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 xl:gap-y-80">
           {clothing.map((product) => (
-            <ProductCard key={product.id} product={product} primary={true} />
+            <PostingCard key={product.id} product={product} primary={true} />
           ))}
         </div>
       </section>

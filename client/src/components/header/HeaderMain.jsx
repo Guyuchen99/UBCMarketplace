@@ -2,11 +2,11 @@ import logo from "../../assets/logo.png";
 
 import { Button } from "@heroui/react";
 import { useEffect } from "react";
-import { FaHeart } from "react-icons/fa";
 import { LuUser } from "react-icons/lu";
 import { useSelector } from "react-redux";
 import { Link } from "react-router";
 
+import { UserSavedListDrawer } from "../../pages/user/UserSavedList";
 import { ProfileAvatar } from "./ProfileAvatar";
 import { SearchBar } from "./SearchBar";
 
@@ -49,13 +49,7 @@ export function HeaderMain() {
 
       {authenticated ? (
         <div className="mx-8 flex items-center justify-center gap-3">
-          <Link
-            to="/my-saved-list"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow hover:border-2 hover:border-cyan-500"
-            aria-label="Saved Items"
-          >
-            <FaHeart className="h-5 w-5 text-rose-500" />
-          </Link>
+          <UserSavedListDrawer />
 
           <ProfileAvatar user={user} />
         </div>
