@@ -1,15 +1,15 @@
 import express from "express";
 import {
-	authMiddleware,
-	deleteAccount,
-	deleteUserForAdmin,
-	getProfile,
-	isAdminMiddleware,
-	loginUser,
-	logoutUser,
-	registerUser,
-	updateAccount,
-	updateUserForAdmin,
+  authMiddleware,
+  deleteAccount,
+  deleteUserForAdmin,
+  getProfile,
+  isAdminMiddleware,
+  loginUser,
+  logoutUser,
+  registerUser,
+  updateAccount,
+  updateUserForAdmin,
 } from "./auth.controller.js";
 
 export const authRouter = express.Router();

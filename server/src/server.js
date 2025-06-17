@@ -14,21 +14,21 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 mongoose
-	.connect(process.env.MONGODB_URI)
-	.then(() => {
-		console.log("MongoDB Connected");
-	})
-	.catch((error) => {
-		console.log(`MongoDB Connection Failed: ${error}`);
-	});
+  .connect(process.env.MONGODB_URI)
+  .then(() => {
+    console.log("MongoDB Connected");
+  })
+  .catch((error) => {
+    console.log(`MongoDB Connection Failed: ${error}`);
+  });
 
 app.use(
-	cors({
-		origin: process.env.CLIENT_URL,
-		methods: ["GET", "POST", "DELETE", "PUT"],
-		allowedHeaders: ["Content-Type", "Authorization", "Cache-Control", "Expires"],
-		credentials: true,
-	})
+  cors({
+    origin: process.env.CLIENT_URL,
+    methods: ["GET", "POST", "DELETE", "PUT"],
+    allowedHeaders: ["Content-Type", "Authorization", "Cache-Control", "Expires"],
+    credentials: true,
+  }),
 );
 
 app.use(express.json());
@@ -39,5 +39,5 @@ app.use("/api/posting", postingRouter);
 app.use("/api/saved-list", savedListRouter);
 
 app.listen(PORT, () => {
-	console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
