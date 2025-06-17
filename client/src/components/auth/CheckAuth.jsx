@@ -20,7 +20,7 @@ export function CheckAuth({ children }) {
     !authenticated &&
     !(
       location.pathname === "/" ||
-      location.pathname.includes("/product-listings") ||
+      location.pathname.includes("/postings") ||
       location.pathname.includes("/login") ||
       location.pathname.includes("/register") ||
       location.pathname.includes("/forgot-password")

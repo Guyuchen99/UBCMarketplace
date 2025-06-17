@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import banner from "../../assets/banner.png";
 
 export function Banner() {
