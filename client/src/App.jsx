@@ -8,12 +8,11 @@ import { AuthLayout } from "./components/layout/AuthLayout.jsx";
 import { RootLayout } from "./components/layout/RootLayout.jsx";
 
 import { Home } from "./pages/user/Home.jsx";
-import { ProductListings } from "./pages/user/ProductListings.jsx";
+import { Postings } from "./pages/user/Postings.jsx";
 import { UserAccount } from "./pages/user/UserAccount.jsx";
 import { UserMailbox } from "./pages/user/UserMailbox.jsx";
 import { UserPostings } from "./pages/user/UserPostings.jsx";
 import { UserRequests } from "./pages/user/UserRequests.jsx";
-import { UserSavedList } from "./pages/user/UserSavedList.jsx";
 
 import { AuthForgotPassword } from "./pages/auth/AuthForgotPassword.jsx";
 import { AuthLogin } from "./pages/auth/AuthLogin.jsx";
@@ -40,7 +39,7 @@ export default function App() {
           errorElement: <Error />,
           children: [
             { index: true, element: <Home /> },
-            { path: "product-listings", element: <ProductListings /> },
+            { path: "postings", element: <Postings /> },
 
             {
               path: "account",
@@ -71,14 +70,6 @@ export default function App() {
               element: (
                 <CheckAuth>
                   <UserRequests />
-                </CheckAuth>
-              ),
-            },
-            {
-              path: "my-saved-list",
-              element: (
-                <CheckAuth>
-                  <UserSavedList />
                 </CheckAuth>
               ),
             },
